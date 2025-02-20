@@ -31,4 +31,5 @@
 - [ ] sitemap.xml
 - [ ] .htaccess
 - [ ] privacy policy
+- [ ] 404 page
 ---
