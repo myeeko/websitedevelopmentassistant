@@ -16,7 +16,7 @@
 - [ ] article - colour assist
 - [x] article - media query
 - [ ] article - ad sizes
-- [ ] article - favicon - favicon.io (roboto serif - 600)
+- [ ] article - favicon - favicon.io
 - [ ] article - what goes in robots.txt
 - [ ] article - what goes in sitemap.xml
 - [ ] article - lighthouse accessibility
