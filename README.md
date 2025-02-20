@@ -20,7 +20,7 @@
 - [ ] article - what goes in robots.txt
 - [ ] article - what goes in sitemap.xml
 - [ ] article - lighthouse accessibility
-- [ ] article - https://www.minifier.org/
+- [ ] article - minifier.org
 - [ ] article - Markdown
 - [ ] article - .htaccess
 - [ ] article - privacy policy
