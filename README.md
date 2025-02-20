@@ -25,6 +25,7 @@
 - [ ] article - .htaccess
 - [ ] article - privacy policy
 - [ ] article - responsive font sizes
+- [ ] article - download complete structure
 - [ ] upload to google search for BOTs
 - [ ] accessibility - lighthouse
 - [ ] robots.txt
