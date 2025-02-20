@@ -1,0 +1,113 @@
+nav a {
+  text-decoration: none;
+}
+
+.accordion {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--clr-primary);
+  width: 100%;
+  max-width: var(--max_content_width);
+  height: var(--navbar_height);
+}
+.accordion .logo {
+  color: var(--clr-white);
+  margin-left: 2rem;
+  padding-bottom: 0;
+}
+
+
+.accordion__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.1s;
+  width: 15ch;
+  height: var(--navbar_height);
+  padding: 1rem 1.5rem;
+  user-select: none;
+}
+
+.accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  width: 1rem;
+  height: 0.5rem;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23ffffff99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.8s;
+}
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  display: none;
+  width: 300px;
+  height: fit-content;
+  max-height: 60vh;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+  overflow-y: scroll;
+  position: absolute;
+  top: var(--navbar_height);
+  right: 0.5rem;
+  z-index: 10;
+}
+.accordion__content a {
+  line-height: 2;
+  font-size: 1rem;
+  color: var(--clr-primary);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.accordion__content a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion__input {
+  display: none;
+}
+.accordion__input:checked ~ .accordion__content {
+  display: flex;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(2.5turn);
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile {
+    display: flex;
+  }
+  .accordion__label {
+    width: 100%;
+  }
+  .accordion__label::after {
+    display: none;
+  }
+  .accordion__content {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+}
